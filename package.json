@@ -1,18 +1,23 @@
 {
-  "name": "tic-tac-toe",
+  "name": "reason-to-do",
+  "version": "0.1.0",
   "scripts": {
-    "start": "bsb -make-world -w",
+    "bs-watch": "bsb -make-world -w",
+    "bs": "bsb -make-world",
+    "js-watch": "bsb -make-world -w",
     "js": "bsb -make-world",
-    "build": "webpack -w",
+    "webpack-watch": "webpack-cli --watch",
+    "webpack": "webpack-cli -p",
     "clean": "bsb -clean-world"
   },
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "reason-react": "^0.3.1"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "reason-react": "^0.3.4"
   },
   "devDependencies": {
-    "bs-platform": "^2.0.0",
-    "webpack": "^3.0.0"
+    "bs-platform": "^2.2.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^3.1.1"
   }
 }
